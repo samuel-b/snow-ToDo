@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="table" max_length="40" name="x_880090_todo_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="40" name="u_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" mandatory="true" max_length="40" name="u_type" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Work" sequence="0" value="work"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Personal" sequence="1" value="personal"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+    </element>
+</database>

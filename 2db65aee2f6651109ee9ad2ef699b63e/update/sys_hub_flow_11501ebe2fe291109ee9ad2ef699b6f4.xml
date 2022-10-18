@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>weekly_completed_slack_summary</internal_name>
+        <label_cache>[{"name":"bb11528d-8320-47c3-9260-a8b5c1b808cd.item.closed_at","label":"2 - For Each➛table Record➛Closed","reference":"","reference_display":"Closed","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_880090_todo_table","column_name":"closed_at"},{"name":"f8aa30f8-0beb-4ddb-9206-3016af0fc529.Records","label":"1 - Look Up Records➛table Records","reference":"x_880090_todo_table","reference_display":"table Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8aa30f8-0beb-4ddb-9206-3016af0fc529.Table","label":"1 - Look Up Records➛table Table","reference":"x_880090_todo_table","reference_display":"table Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8aa30f8-0beb-4ddb-9206-3016af0fc529.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8aa30f8-0beb-4ddb-9206-3016af0fc529.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8aa30f8-0beb-4ddb-9206-3016af0fc529.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb11528d-8320-47c3-9260-a8b5c1b808cd.item","label":"2 - For Each➛table Record","reference":"x_880090_todo_table","reference_display":"table Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"a33f87cc-48e3-4294-ad48-7a35ba0abebe.__action_status__","label":"3 - Post a Message➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a33f87cc-48e3-4294-ad48-7a35ba0abebe.__dont_treat_as_error__","label":"3 - Post a Message➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb11528d-8320-47c3-9260-a8b5c1b808cd.item.assigned_to.x_880090_todo_webhook","label":"2 - For Each➛table Record➛Assigned to➛Webhook","reference":"","reference_display":"Webhook","type":"url","base_type":"url","parent_table_name":"sys_user","column_name":"x_880090_todo_webhook"},{"name":"bb11528d-8320-47c3-9260-a8b5c1b808cd.item.short_description","label":"2 - For Each➛table Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_880090_todo_table","column_name":"short_description"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Weekly Completed Slack Summary</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:05:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>11501ebe2fe291109ee9ad2ef699b6f4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Weekly Completed Slack Summary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ToDo" source="x_880090_todo">2db65aee2f6651109ee9ad2ef699b63e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_update_name>sys_hub_flow_11501ebe2fe291109ee9ad2ef699b6f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:12:06</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=11501ebe2fe291109ee9ad2ef699b6f4^sys_idNOT INeb31dafe2fe291109ee9ad2ef699b6b0"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Weekly Completed Slack Summary">11501ebe2fe291109ee9ad2ef699b6f4</flow>
+        <name>Weekly</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:03</sys_created_on>
+        <sys_id>eb31dafe2fe291109ee9ad2ef699b6b0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:12:06</sys_updated_on>
+        <trigger_definition display_value="Weekly">cf352104c32222002841b63b12d3ae1f</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>weekly</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=eb31dafe2fe291109ee9ad2ef699b6b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>eb31dafe2fe291109ee9ad2ef699b6b0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:03</sys_created_on>
+        <sys_id>2331dafe2fe291109ee9ad2ef699b6b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:09:03</sys_updated_on>
+        <value>5</value>
+        <variable display_value="Day of Week">c685a104c32222002841b63b12d3aed3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>eb31dafe2fe291109ee9ad2ef699b6b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:03</sys_created_on>
+        <sys_id>2b31dafe2fe291109ee9ad2ef699b6b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:09:03</sys_updated_on>
+        <value>1970-01-01 17:00:00</value>
+        <variable display_value="Time">a745a104c32222002841b63b12d3ae18</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_cf352104c32222002841b63b12d3ae1f^id=eb31dafe2fe291109ee9ad2ef699b6b0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=11501ebe2fe291109ee9ad2ef699b6f4^sys_idNOT IN1d501ebe2fe291109ee9ad2ef699b6f6"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>11501ebe2fe291109ee9ad2ef699b6f4</id>
+        <name>Weekly Completed Slack Summary</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:05:05</sys_created_on>
+        <sys_id>1d501ebe2fe291109ee9ad2ef699b6f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:05:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1d501ebe2fe291109ee9ad2ef699b6f6"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=11501ebe2fe291109ee9ad2ef699b6f4^sys_idNOT IN2731dafe2fe291109ee9ad2ef699b6c6,e331dafe2fe291109ee9ad2ef699b6db"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Weekly Completed Slack Summary">11501ebe2fe291109ee9ad2ef699b6f4</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:03</sys_created_on>
+        <sys_id>2731dafe2fe291109ee9ad2ef699b6c6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:12:06</sys_updated_on>
+        <ui_id>f8aa30f8-0beb-4ddb-9206-3016af0fc529</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2731dafe2fe291109ee9ad2ef699b6c6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2731dafe2fe291109ee9ad2ef699b6c6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:03</sys_created_on>
+        <sys_id>2331dafe2fe291109ee9ad2ef699b6c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:09:03</sys_updated_on>
+        <value>x_880090_todo_table</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2731dafe2fe291109ee9ad2ef699b6c6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:03</sys_created_on>
+        <sys_id>6f31dafe2fe291109ee9ad2ef699b6c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:09:03</sys_updated_on>
+        <value>state=3^closed_atONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=2731dafe2fe291109ee9ad2ef699b6c6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2731dafe2fe291109ee9ad2ef699b6c6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2731dafe2fe291109ee9ad2ef699b6c6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">41ca0f433be0030057a4a2e334efc474</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Weekly Completed Slack Summary">11501ebe2fe291109ee9ad2ef699b6f4</flow>
+        <order>3</order>
+        <parent_ui_id>bb11528d-8320-47c3-9260-a8b5c1b808cd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:04</sys_created_on>
+        <sys_id>e331dafe2fe291109ee9ad2ef699b6db</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:12:06</sys_updated_on>
+        <ui_id>a33f87cc-48e3-4294-ad48-7a35ba0abebe</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e331dafe2fe291109ee9ad2ef699b6db"/>
+    <sys_element_mapping action="delete_multiple" query="id=e331dafe2fe291109ee9ad2ef699b6db"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>e331dafe2fe291109ee9ad2ef699b6db</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:04</sys_created_on>
+        <sys_id>2331dafe2fe291109ee9ad2ef699b6dd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:12:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41ca0f433be0030057a4a2e334efc474</table>
+        <value>Completed {{bb11528d-8320-47c3-9260-a8b5c1b808cd.item.closed_at}} -﻿ {{bb11528d-8320-47c3-9260-a8b5c1b808cd.item.short_description}}﻿</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>e331dafe2fe291109ee9ad2ef699b6db</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:04</sys_created_on>
+        <sys_id>6f31dafe2fe291109ee9ad2ef699b6dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:09:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41ca0f433be0030057a4a2e334efc474</table>
+        <value>{{bb11528d-8320-47c3-9260-a8b5c1b808cd.item.assigned_to.x_880090_todo_webhook}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e331dafe2fe291109ee9ad2ef699b6db"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e331dafe2fe291109ee9ad2ef699b6db"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=11501ebe2fe291109ee9ad2ef699b6f4^sys_idNOT IN2331dafe2fe291109ee9ad2ef699b6ca"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a731dafe2fe291109ee9ad2ef699b6c9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Weekly Completed Slack Summary">11501ebe2fe291109ee9ad2ef699b6f4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:03</sys_created_on>
+        <sys_id>2331dafe2fe291109ee9ad2ef699b6ca</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:12:06</sys_updated_on>
+        <ui_id>bb11528d-8320-47c3-9260-a8b5c1b808cd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2331dafe2fe291109ee9ad2ef699b6ca"/>
+    <sys_element_mapping action="delete_multiple" query="id=2331dafe2fe291109ee9ad2ef699b6ca"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>2331dafe2fe291109ee9ad2ef699b6ca</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 22:09:03</sys_created_on>
+        <sys_id>e331dafe2fe291109ee9ad2ef699b6cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 22:09:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{f8aa30f8-0beb-4ddb-9206-3016af0fc529.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2331dafe2fe291109ee9ad2ef699b6ca"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2331dafe2fe291109ee9ad2ef699b6ca"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=11501ebe2fe291109ee9ad2ef699b6f4"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=11501ebe2fe291109ee9ad2ef699b6f4"/>
+</record_update>

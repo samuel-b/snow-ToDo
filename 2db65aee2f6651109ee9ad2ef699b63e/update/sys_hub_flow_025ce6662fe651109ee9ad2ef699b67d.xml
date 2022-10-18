@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>b7a52e6e2fa651109ee9ad2ef699b60d</copied_from>
+        <copied_from_name>Daily Slack Notification</copied_from_name>
+        <description/>
+        <internal_name>weekly_due_slack_summary</internal_name>
+        <label_cache>[{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.due_date","label":"2 - For Each➛table Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_880090_todo_table","column_name":"due_date"},{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.short_description","label":"2 - For Each➛table Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_880090_todo_table","column_name":"short_description"},{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.assigned_to.email","label":"2 - For Each➛table Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"d4b2ccd1-fbf9-42fc-bd19-2732f2486524.__dont_treat_as_error__","label":"3 - Post a Message➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4b2ccd1-fbf9-42fc-bd19-2732f2486524.__action_status__","label":"3 - Post a Message➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item","label":"2 - For Each➛table Record","reference":"x_880090_todo_table","reference_display":"table Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.Table","label":"1 - Look Up Records➛table Table","reference":"x_880090_todo_table","reference_display":"table Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.Records","label":"1 - Look Up Records➛table Records","reference":"x_880090_todo_table","reference_display":"table Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.assigned_to.x_880090_todo_webhook","label":"2 - For Each➛table Record➛Assigned to➛Webhook","reference":"","reference_display":"Webhook","type":"url","base_type":"url","parent_table_name":"sys_user","column_name":"x_880090_todo_webhook"}]</label_cache>
+        <master_snapshot>12ec26a62fe651109ee9ad2ef699b681</master_snapshot>
+        <name>Weekly Due Slack Summary</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>faec26a62fe651109ee9ad2ef699b6e7</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:28:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>025ce6662fe651109ee9ad2ef699b67d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weekly Due Slack Summary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ToDo" source="x_880090_todo">2db65aee2f6651109ee9ad2ef699b63e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_update_name>sys_hub_flow_025ce6662fe651109ee9ad2ef699b67d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 23:05:25</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week>1</day_of_week>
+        <name/>
+        <run_period/>
+        <run_start>2022-10-18 05:31:30</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>faec26a62fe651109ee9ad2ef699b6e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:30</sys_updated_on>
+        <time>1969-12-31 22:00:00</time>
+        <timer_type>3</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:faec26a62fe651109ee9ad2ef699b6e7^sys_idNOT INf2ec26a62fe651109ee9ad2ef699b6e8"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:faec26a62fe651109ee9ad2ef699b6e7</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2022-10-18 05:31:30</run_start>
+        <run_time>1969-12-31 22:00:00</run_time>
+        <run_type>weekly</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('faec26a62fe651109ee9ad2ef699b6e7');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:30</sys_created_on>
+        <sys_id>f2ec26a62fe651109ee9ad2ef699b6e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:30</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">faec26a62fe651109ee9ad2ef699b6e7</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=025ce6662fe651109ee9ad2ef699b67d^sys_idNOT IN0dbcae662fe651109ee9ad2ef699b692"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Weekly Due Slack Summary">025ce6662fe651109ee9ad2ef699b67d</flow>
+        <name>Weekly</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:30:34</sys_created_on>
+        <sys_id>0dbcae662fe651109ee9ad2ef699b692</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:36:53</sys_updated_on>
+        <trigger_definition display_value="Weekly">cf352104c32222002841b63b12d3ae1f</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>weekly</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0dbcae662fe651109ee9ad2ef699b692"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0dbcae662fe651109ee9ad2ef699b692</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:30:34</sys_created_on>
+        <sys_id>45bcae662fe651109ee9ad2ef699b694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:30:34</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Day of Week">c685a104c32222002841b63b12d3aed3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0dbcae662fe651109ee9ad2ef699b692</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:30:34</sys_created_on>
+        <sys_id>81bcae662fe651109ee9ad2ef699b694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:30:34</sys_updated_on>
+        <value>1970-01-01 08:00:00</value>
+        <variable display_value="Time">a745a104c32222002841b63b12d3ae18</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_cf352104c32222002841b63b12d3ae1f^id=0dbcae662fe651109ee9ad2ef699b692"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=025ce6662fe651109ee9ad2ef699b67d^sys_idNOT IN8a5ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>025ce6662fe651109ee9ad2ef699b67d</id>
+        <name>Weekly Due Slack Summary</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:28:59</sys_created_on>
+        <sys_id>8a5ce6662fe651109ee9ad2ef699b67d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:28:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8a5ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=025ce6662fe651109ee9ad2ef699b67d^sys_idNOT IN325ce6662fe651109ee9ad2ef699b6c7,ca5ce6662fe651109ee9ad2ef699b692"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">41ca0f433be0030057a4a2e334efc474</action_type>
+        <action_type_parent display_value="Post a Message">d3b4e24b3ba0030057a4a2e334efc4e4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>41ca0f433be0030057a4a2e334efc474</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Weekly Due Slack Summary">025ce6662fe651109ee9ad2ef699b67d</flow>
+        <order>3</order>
+        <parent_ui_id>0533eed8-c0b5-4438-bff2-8e52b9c9453f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:29:02</sys_created_on>
+        <sys_id>325ce6662fe651109ee9ad2ef699b6c7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:36:54</sys_updated_on>
+        <ui_id>d4b2ccd1-fbf9-42fc-bd19-2732f2486524</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=325ce6662fe651109ee9ad2ef699b6c7"/>
+    <sys_element_mapping action="delete_multiple" query="id=325ce6662fe651109ee9ad2ef699b6c7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>325ce6662fe651109ee9ad2ef699b6c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:29:02</sys_created_on>
+        <sys_id>765ce6662fe651109ee9ad2ef699b6d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:36:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41ca0f433be0030057a4a2e334efc474</table>
+        <value>Due {{0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.due_date}} - {{0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.short_description}}﻿</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>325ce6662fe651109ee9ad2ef699b6c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:29:02</sys_created_on>
+        <sys_id>b25ce6662fe651109ee9ad2ef699b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:29:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41ca0f433be0030057a4a2e334efc474</table>
+        <value>{{0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.assigned_to.x_880090_todo_webhook}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=325ce6662fe651109ee9ad2ef699b6c7^sys_idNOT IN325ce6662fe651109ee9ad2ef699b6c8,fa5ce6662fe651109ee9ad2ef699b6d4"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_webhook_url</input_name>
+        <instance>325ce6662fe651109ee9ad2ef699b6c7</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_webhook_url":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:29:02</sys_created_on>
+        <sys_id>325ce6662fe651109ee9ad2ef699b6c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:29:02</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_message</input_name>
+        <instance>325ce6662fe651109ee9ad2ef699b6c7</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_message":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:29:02</sys_created_on>
+        <sys_id>fa5ce6662fe651109ee9ad2ef699b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:29:02</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=325ce6662fe651109ee9ad2ef699b6c7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Weekly Due Slack Summary">025ce6662fe651109ee9ad2ef699b67d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:28:59</sys_created_on>
+        <sys_id>ca5ce6662fe651109ee9ad2ef699b692</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:36:53</sys_updated_on>
+        <ui_id>50e1a6ac-670b-4836-8ca9-d08826f8cc5a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ca5ce6662fe651109ee9ad2ef699b692"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ca5ce6662fe651109ee9ad2ef699b692</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:28:59</sys_created_on>
+        <sys_id>0a5ce6662fe651109ee9ad2ef699b694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:28:59</sys_updated_on>
+        <value>due_date</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ca5ce6662fe651109ee9ad2ef699b692</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:28:59</sys_created_on>
+        <sys_id>8e5ce6662fe651109ee9ad2ef699b694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:28:59</sys_updated_on>
+        <value>x_880090_todo_table</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ca5ce6662fe651109ee9ad2ef699b692</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:28:59</sys_created_on>
+        <sys_id>ca5ce6662fe651109ee9ad2ef699b694</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:30:34</sys_updated_on>
+        <value>due_dateONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=ca5ce6662fe651109ee9ad2ef699b692"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ca5ce6662fe651109ee9ad2ef699b692"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ca5ce6662fe651109ee9ad2ef699b692"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=025ce6662fe651109ee9ad2ef699b67d^sys_idNOT INc65ce6662fe651109ee9ad2ef699b686"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">524766222fe651109ee9ad2ef699b679</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Weekly Due Slack Summary">025ce6662fe651109ee9ad2ef699b67d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:28:59</sys_created_on>
+        <sys_id>c65ce6662fe651109ee9ad2ef699b686</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:36:54</sys_updated_on>
+        <ui_id>0533eed8-c0b5-4438-bff2-8e52b9c9453f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c65ce6662fe651109ee9ad2ef699b686"/>
+    <sys_element_mapping action="delete_multiple" query="id=c65ce6662fe651109ee9ad2ef699b686"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>c65ce6662fe651109ee9ad2ef699b686</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:28:59</sys_created_on>
+        <sys_id>4e5ce6662fe651109ee9ad2ef699b688</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:28:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{50e1a6ac-670b-4836-8ca9-d08826f8cc5a.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c65ce6662fe651109ee9ad2ef699b686"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c65ce6662fe651109ee9ad2ef699b686"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=025ce6662fe651109ee9ad2ef699b67d^sys_idNOT INfaec26a62fe651109ee9ad2ef699b6ea"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>025ce6662fe651109ee9ad2ef699b67d</plan_id>
+        <snapshot>12ec26a62fe651109ee9ad2ef699b681</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>faec26a62fe651109ee9ad2ef699b6ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:30</sys_updated_on>
+        <trigger display_value="">faec26a62fe651109ee9ad2ef699b6e7</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=025ce6662fe651109ee9ad2ef699b67d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>weekly_due_slack_summary</internal_name>
+        <label_cache>[{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.due_date","label":"2 - For Each➛table Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_880090_todo_table","column_name":"due_date"},{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.short_description","label":"2 - For Each➛table Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_880090_todo_table","column_name":"short_description"},{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.assigned_to.email","label":"2 - For Each➛table Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"d4b2ccd1-fbf9-42fc-bd19-2732f2486524.__dont_treat_as_error__","label":"3 - Post a Message➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4b2ccd1-fbf9-42fc-bd19-2732f2486524.__action_status__","label":"3 - Post a Message➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item","label":"2 - For Each➛table Record","reference":"x_880090_todo_table","reference_display":"table","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.Table","label":"1 - Look Up Records➛table Table","reference":"x_880090_todo_table","reference_display":"table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50e1a6ac-670b-4836-8ca9-d08826f8cc5a.Records","label":"1 - Look Up Records➛table Records","reference":"x_880090_todo_table","reference_display":"table","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.assigned_to.x_880090_todo_webhook","label":"2 - For Each➛table Record➛Assigned to➛Webhook","reference":"","reference_display":"Webhook","type":"url","base_type":"url","parent_table_name":"sys_user","column_name":"x_880090_todo_webhook"}]</label_cache>
+        <master>true</master>
+        <name>Weekly Due Slack Summary</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Weekly Due Slack Summary">025ce6662fe651109ee9ad2ef699b67d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12ec26a62fe651109ee9ad2ef699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:27</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_variable_value action="delete_multiple" query="document_key=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=12ec26a62fe651109ee9ad2ef699b681^sys_idNOT INeeec26a62fe651109ee9ad2ef699b6a1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Weekly Due Slack Summary">12ec26a62fe651109ee9ad2ef699b681</flow>
+        <name>Weekly</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>eeec26a62fe651109ee9ad2ef699b6a1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:30</sys_updated_on>
+        <trigger_definition display_value="Weekly">cf352104c32222002841b63b12d3ae1f</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>weekly</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=eeec26a62fe651109ee9ad2ef699b6a1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>eeec26a62fe651109ee9ad2ef699b6a1</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>62ec26a62fe651109ee9ad2ef699b6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Day of Week">c685a104c32222002841b63b12d3aed3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>eeec26a62fe651109ee9ad2ef699b6a1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>aeec26a62fe651109ee9ad2ef699b6a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <value>1970-01-01 08:00:00</value>
+        <variable display_value="Time">a745a104c32222002841b63b12d3ae18</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_cf352104c32222002841b63b12d3ae1f^id=eeec26a62fe651109ee9ad2ef699b6a1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=12ec26a62fe651109ee9ad2ef699b681^sys_idNOT IN1aec26a62fe651109ee9ad2ef699b681"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>12ec26a62fe651109ee9ad2ef699b681</id>
+        <name>Weekly Due Slack Summary</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:27</sys_created_on>
+        <sys_id>1aec26a62fe651109ee9ad2ef699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1aec26a62fe651109ee9ad2ef699b681"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=12ec26a62fe651109ee9ad2ef699b681^sys_idNOT INaeec26a62fe651109ee9ad2ef699b69f,d6ec26a62fe651109ee9ad2ef699b68f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">41ca0f433be0030057a4a2e334efc474</action_type>
+        <action_type_parent display_value="Post a Message">d3b4e24b3ba0030057a4a2e334efc4e4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>41ca0f433be0030057a4a2e334efc474</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Weekly Due Slack Summary">12ec26a62fe651109ee9ad2ef699b681</flow>
+        <order>3</order>
+        <parent_ui_id>0533eed8-c0b5-4438-bff2-8e52b9c9453f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>aeec26a62fe651109ee9ad2ef699b69f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <ui_id>d4b2ccd1-fbf9-42fc-bd19-2732f2486524</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aeec26a62fe651109ee9ad2ef699b69f"/>
+    <sys_element_mapping action="delete_multiple" query="id=aeec26a62fe651109ee9ad2ef699b69f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>aeec26a62fe651109ee9ad2ef699b69f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>2eec26a62fe651109ee9ad2ef699b6a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41ca0f433be0030057a4a2e334efc474</table>
+        <value>Due Today: ﻿ {{0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.short_description}} @ {{0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.due_date}}﻿</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>aeec26a62fe651109ee9ad2ef699b69f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>6aec26a62fe651109ee9ad2ef699b6a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41ca0f433be0030057a4a2e334efc474</table>
+        <value>{{0533eed8-c0b5-4438-bff2-8e52b9c9453f.item.assigned_to.x_880090_todo_webhook}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aeec26a62fe651109ee9ad2ef699b69f^sys_idNOT INa2ec26a62fe651109ee9ad2ef699b6a1,aeec26a62fe651109ee9ad2ef699b6a0"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_message</input_name>
+        <instance>aeec26a62fe651109ee9ad2ef699b69f</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_message":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>a2ec26a62fe651109ee9ad2ef699b6a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_webhook_url</input_name>
+        <instance>aeec26a62fe651109ee9ad2ef699b69f</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_webhook_url":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>aeec26a62fe651109ee9ad2ef699b6a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aeec26a62fe651109ee9ad2ef699b69f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Weekly Due Slack Summary">12ec26a62fe651109ee9ad2ef699b681</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>d6ec26a62fe651109ee9ad2ef699b68f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="ToDo">2db65aee2f6651109ee9ad2ef699b63e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <ui_id>50e1a6ac-670b-4836-8ca9-d08826f8cc5a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d6ec26a62fe651109ee9ad2ef699b68f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d6ec26a62fe651109ee9ad2ef699b68f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>16ec26a62fe651109ee9ad2ef699b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <value>due_date</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d6ec26a62fe651109ee9ad2ef699b68f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>9aec26a62fe651109ee9ad2ef699b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <value>x_880090_todo_table</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d6ec26a62fe651109ee9ad2ef699b68f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:28</sys_created_on>
+        <sys_id>d6ec26a62fe651109ee9ad2ef699b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <value>due_dateONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=d6ec26a62fe651109ee9ad2ef699b68f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d6ec26a62fe651109ee9ad2ef699b68f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d6ec26a62fe651109ee9ad2ef699b68f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=12ec26a62fe651109ee9ad2ef699b681^sys_idNOT IN16ec26a62fe651109ee9ad2ef699b687,d6ec26a62fe651109ee9ad2ef699b684"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">624766222fe651109ee9ad2ef699b68e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Weekly Due Slack Summary">12ec26a62fe651109ee9ad2ef699b681</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>0533eed8-c0b5-4438-bff2-8e52b9c9453f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:27</sys_created_on>
+        <sys_id>16ec26a62fe651109ee9ad2ef699b687</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:28</sys_updated_on>
+        <ui_id>9d380c5f-90c9-490a-bd80-77e20aacd5d1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=16ec26a62fe651109ee9ad2ef699b687"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=16ec26a62fe651109ee9ad2ef699b687"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=16ec26a62fe651109ee9ad2ef699b687"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">524766222fe651109ee9ad2ef699b679</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Weekly Due Slack Summary">12ec26a62fe651109ee9ad2ef699b681</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:27</sys_created_on>
+        <sys_id>d6ec26a62fe651109ee9ad2ef699b684</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:27</sys_updated_on>
+        <ui_id>0533eed8-c0b5-4438-bff2-8e52b9c9453f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d6ec26a62fe651109ee9ad2ef699b684"/>
+    <sys_element_mapping action="delete_multiple" query="id=d6ec26a62fe651109ee9ad2ef699b684"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>d6ec26a62fe651109ee9ad2ef699b684</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 05:31:27</sys_created_on>
+        <sys_id>5eec26a62fe651109ee9ad2ef699b686</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 05:31:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{50e1a6ac-670b-4836-8ca9-d08826f8cc5a.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d6ec26a62fe651109ee9ad2ef699b684"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d6ec26a62fe651109ee9ad2ef699b684"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_12ec26a62fe651109ee9ad2ef699b681"/>
+    <sys_hub_flow action="update">
+        <sys_id>025ce6662fe651109ee9ad2ef699b67d</sys_id>
+        <latest_snapshot>12ec26a62fe651109ee9ad2ef699b681</latest_snapshot>
+    </sys_hub_flow>
+</record_update>
